@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+
+  --Green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--Off-Black);
+  color: var(--White);
+  padding: 1.8rem 3rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.container {
+  background-color: var(--Dark-Grey);
+  padding: 1.4rem;
+  margin: auto;
+  width: 11rem;
+  height: 16.5rem;
+  border-radius: 0.3rem;
+}
+
+.image-para {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-para img {
+  height: 1.75rem;
+  width: 1.75rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-size: 0.5rem;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: var(--Green);
+  font-size: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  font-size: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.button-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: var(--Grey);
+  color: var(--White);
+  padding: 0.5rem 0.6rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  font-size: 0.4rem;
+}
+.btn:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 80px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
