@@ -26,15 +26,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.9rem;
 }
 
 .container {
   background-color: var(--Dark-Grey);
   padding: 1.4rem;
   margin: auto;
-  width: 11rem;
-  height: 16.5rem;
+  width: 18rem;
+  height: 27rem;
   border-radius: 0.3rem;
 }
 
@@ -43,30 +42,33 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1.2rem;
 }
 
 .image-para img {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 80px;
+  width: 80px;
   object-fit: cover;
-  border-radius: 0.8rem;
-  margin-bottom: 0.6rem;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
 }
 
 .title {
-  font-size: 0.5rem;
-  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 .location {
   color: var(--Green);
-  font-size: 0.35rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+  margin-bottom: 1.1rem;
+  font-weight: bold;
 }
 
 .job-title {
-  font-size: 0.4rem;
+  font-size: 0.65rem;
   margin-bottom: 0.75rem;
+  letter-spacing: 1px;
 }
 
 .button-card {
@@ -77,12 +79,12 @@ body {
 .btn {
   background-color: var(--Grey);
   color: var(--White);
-  padding: 0.5rem 0.6rem;
+  padding: 0.6rem 0.8rem;
   border: none;
-  border-radius: 0.2rem;
-  margin-bottom: 0.3rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.6rem;
   font-weight: bold;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
 }
 .btn:hover {
   background-color: var(--Green);
@@ -90,8 +92,13 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-  body {
-    min-width: 375px;
+  .container {
+    width: 300px;
+  }
+  .job-title {
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 }
 
